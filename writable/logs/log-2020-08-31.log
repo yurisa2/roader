@@ -1,0 +1,12 @@
+CRITICAL - 2020-08-31 19:57:57 --> Class 'App\Models\TestModel' not found
+#0 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(918): App\Controllers\Test->listar()
+#1 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#2 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-31 19:58:44 --> Class 'App\Models\TestModel' not found
+#0 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(918): App\Controllers\Test->listar()
+#1 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#2 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -1,0 +1,32 @@
+CRITICAL - 2020-09-03 19:56:49 --> There is no data to insert.
+#0 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Model.php(700): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Models/VehicleModel.php(25): CodeIgniter\Model->insert(NULL)
+#2 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Controllers/Vehicle.php(36): App\Models\VehicleModel->createVehicle(Array)
+#3 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(918): App\Controllers\Vehicle->create_vehicle()
+#4 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehicle))
+#5 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-03 19:59:23 --> There is no data to insert.
+#0 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Model.php(700): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Models/VehicleModel.php(25): CodeIgniter\Model->insert(NULL)
+#2 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Controllers/Vehicle.php(36): App\Models\VehicleModel->createVehicle(Array)
+#3 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(918): App\Controllers\Vehicle->create_vehicle()
+#4 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehicle))
+#5 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-03 20:00:09 --> SQLite3::exec(): table vehicle has no column named dataAdded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::exec()...', '/home/yurisa2/l...', 183, Array)
+#1 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Database/SQLite3/Connection.php(183): SQLite3->exec('INSERT INTO `ve...')
+#2 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Database/BaseConnection.php(741): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `ve...')
+#3 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#4 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#5 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Models/VehicleModel.php(25): CodeIgniter\Model->insert(Array)
+#7 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/app/Controllers/Vehicle.php(36): App\Models\VehicleModel->createVehicle(Array)
+#8 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(918): App\Controllers\Vehicle->create_vehicle()
+#9 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehicle))
+#10 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/yurisa2/lampstack-7.3.7-1/apache2/htdocs/pw3/projeto/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
