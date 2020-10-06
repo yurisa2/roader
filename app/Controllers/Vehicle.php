@@ -39,6 +39,16 @@ class Vehicle extends BaseController
 
 	}
 
+	public function delete_vehicle($id) { // This is the Create portion of the Crud
+		$dataModel = new VehicleModel;
+
+		$dataModel->delete($id);
+
+
+		return redirect()->to(base_url('public/vehicle/list'));
+
+	}
+
 	//--------------------------------------------------------------------
 
 }
