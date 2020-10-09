@@ -9,11 +9,13 @@ $table = new \CodeIgniter\View\Table();
 
 
 
-echo anchor('../public/vehicle/createForm', '<button class="btn btn-xs btn-success"><span class="bigger-110">Create Vehicle</span><i class="ace-icon fa fa-plus icon-on-right"></i></button>');
+echo anchor('../public/vehicle/form', '<button class="btn btn-xs btn-success"><span class="bigger-110">Create Vehicle</span><i class="ace-icon fa fa-plus icon-on-right"></i></button>');
 
 
 foreach ($tableData as $key => $value) {
-  $tableData[$key]["delete"] = anchor("../public/vehicle/delete_vehicle/". $value['id'], '<button class="btn btn-xs btn-danger"><i class="ace-icon fa fa-trash-o bigger-120"></i></button>') ;
+  $tableData[$key]["ops"] =
+  anchor("../public/vehicle/delete_vehicle/". $value['id'], '<button class="btn btn-xs btn-danger"><i class="ace-icon fa fa-trash-o bigger-120"></i></button>') .
+  anchor("../public/vehicle/form/". $value['id'], '<button class="btn btn-xs btn-success"><i class="ace-icon fa fa-edit bigger-120"></i></button>') ;
 
 }
 // var_dump($tableData);
@@ -27,7 +29,7 @@ $tbHeading = [
 	"model",
 	"kmInitial",
 	"dateAdded",
-  "Ops"
+  "Ops",
 ];
 
 

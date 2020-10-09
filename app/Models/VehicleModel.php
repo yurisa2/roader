@@ -22,7 +22,7 @@ class VehicleModel extends Model
 
     public function createVehicle($vehicleData) {
 
-      $this->insert($vehicleData);
+      $this->save($vehicleData);
 
     }
 }
