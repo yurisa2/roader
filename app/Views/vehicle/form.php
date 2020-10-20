@@ -53,7 +53,8 @@ echo '</div>';
 echo $formGroup;
 
 echo form_label('make','make', $classLabel);
-echo form_input('make',$make,);
+echo form_dropdown('make', $make_list);
+// echo form_input('make',$make,);
 echo '</div>';
 
 echo $formGroup;

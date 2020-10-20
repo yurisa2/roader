@@ -4,6 +4,7 @@
 namespace App\Controllers;
 
 use App\Models\VehicleModel;
+use App\Models\MakesModel;
 
 
 class Vehicle extends BaseController
@@ -25,9 +26,24 @@ class Vehicle extends BaseController
 	public function form($id = 0) { // This is the Create portion of the Crud
 
 		$dataModel = new VehicleModel;
+		$makesModel = new MakesModel;
+
+		$allMakes = $makesModel->findAll();
+
+		$sendMakes = array();
+
+		foreach ($allMakes as $key => $value) {
+			$sendMakes[$value['id']] = $value['make_name'];
+		}
+
+		// echo "<pre>";
+		// var_dump($sendMakes);
+		// exit;
+
 		if($id != 0) $data['vehicleData'] = $dataModel->find($id);
 		$data['id'] = $id;
 
+		$data['make_list'] = $sendMakes;
 
 		echo view('vehicle/form', $data);
 
