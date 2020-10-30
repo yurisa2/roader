@@ -19,6 +19,9 @@ class Vehicle extends BaseController
 
     $data['title'] = "Vehicle Test";
 
+			$data['html_menu'] = $this->html;
+
+
     echo view('vehicle/list',$data);
 
 	}
@@ -44,6 +47,9 @@ class Vehicle extends BaseController
 		$data['id'] = $id;
 
 		$data['make_list'] = $sendMakes;
+
+		$data['html_menu'] = $this->html;
+
 
 		echo view('vehicle/form', $data);
 

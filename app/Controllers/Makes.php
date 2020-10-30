@@ -6,7 +6,7 @@ use App\Models\MakesModel;
 use App\Models\VehicleData;
 
 
-class Makes extends Controller
+class Makes extends BaseController
 {
     public function index()
     {
@@ -17,12 +17,16 @@ class Makes extends Controller
 
       $data['title'] = "Make List";
 
+      $data['html_menu'] = $this->html;
+
+
       echo view('makes/list', $data);
     }
 
     public function create() {
+      $data['html_menu'] = $this->html;
 
-      echo view('makes/create');
+      echo view('makes/create', $data);
       // Este método só carrega UMA VIEW E MAIS NADA.
       // QUe fique claro que não se pode carregar uma view diretamente
     }

@@ -5,15 +5,7 @@
 
 <ul class="nav nav-list" style="top: 0px;">
 
-  <!-- ESSE <li> é o que vocÊs querem automatizar com o conteúdo dinamico -->
-  <li class="active">
-    <a href="index.html">
-      <i class="menu-icon fa fa-tachometer"></i>
-      <span class="menu-text"> Vehicle </span>
-    </a>
-
-    <b class="arrow"></b>
-  </li>
+  <?php echo($html_menu); ?>
 
     </ul>
   </li>

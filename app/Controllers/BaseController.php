@@ -36,6 +36,30 @@ class BaseController extends Controller
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
 
+
+
+				$menu_array = ['Vehicle' => ['index', 'form'],
+												'Makes' => ['index', 'create']];
+
+				$this->html = '';
+				foreach ($menu_array as $chave_principal => $valor_principal) {
+
+					foreach ($valor_principal as $sub_chave => $sub_valor) {
+
+					$this->html .= '  <li class="active">
+							<a href="'.\base_url('public/'.$chave_principal).'/'.$sub_valor.'">
+								<i class="menu-icon fa fa-tachometer"></i>
+								<span class="menu-text"> '.$chave_principal.' - '.$sub_valor.' </span>
+							</a>
+
+							<b class="arrow"></b>
+						</li>';
+						}
+					}
+
+
+
+
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
